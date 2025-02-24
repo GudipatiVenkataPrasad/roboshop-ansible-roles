@@ -1,0 +1,14 @@
+
+- name: appsetup
+  ansible.builtin.import.role:
+  name: common
+  tasks_from: appsetup
+
+- name: appsetup
+  ansible.builtin.import.role:
+  name: common
+  tasks_from: nodejs
+- name: mangodb setup
+  ansible.builtin.import.role:
+  name: common
+  tasks_from: mongodb-setup
