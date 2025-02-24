@@ -1,0 +1,4 @@
+- name: appsetup
+  ansible.builtin.import.role:
+  name: common
+  tasks_from: appsetup
