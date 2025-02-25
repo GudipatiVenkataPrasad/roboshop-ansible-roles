@@ -12,3 +12,7 @@
   ansible.builtin.import.role:
   name: common
   tasks_from: mongodb-setup
+- name: system start
+  ansible.builtin.import.role:
+  name: common
+  tasks_from: systemd
